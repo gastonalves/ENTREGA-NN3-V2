@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #1D1D1D;
+    color: white;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-nav {
+    display: flex;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+#toggle {
+    display: none;
+}
+
+label[for="toggle"] {
+    display: none;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 2rem;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    nav {
+        flex: 1;
+    }
+
+    .footer-navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #f6f6f6;
+            }
+        }
+    }
+
+    .contacto-footer {
+        flex: 1;
+        text-align: right;
+
+        h3 {
+            margin: 0;
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #f6f6f6;
+                }
+            }
+        }
+    }
+}
